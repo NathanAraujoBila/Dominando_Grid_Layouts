@@ -1,0 +1,75 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /*pode se usar várias medidas de unidades, como px, em, rem, % , e se pode também misturar essas medidas de unidades como % e px ou rem e %*/
+    grid-template-rows: 300px 200px; /*define a altura das linhas do grid*/
+    
+
+}   
+
+
+.container-02 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /*a medida de unidade fr divide o espaço disponível igualmente entre as colunas*/
+    grid-template-rows: 2fr 1fr; /*a medida fr também funciona nas template-rows*/
+    
+}
+
+.container-03 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*a medida de unidade fr divide o espaço disponível igualmente entre as colunas*/
+    grid-template-rows: 2fr 1fr; /*a medida fr também funciona nas template-rows*/
+    
+}
+
+
+.item {
+    border: 1px solid black;
+}
+
+.item-01 {
+    background: palevioletred;
+}
+
+.item-02 {
+    background: cornflowerblue;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: orange;
+}
+
+.item-05 {
+    background: cadetblue;
+}
+
+.item-06 {
+    background: aqua;
+}
+
+.item-07 {
+    background: tomato;
+}
