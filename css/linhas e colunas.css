@@ -1,20 +1,31 @@
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+@import url('css/reset.css');
+
+body {
+    background-color: rgb(48, 48, 48);
+}
+
+
+h1 {
+    font-family: 'open sans', sans-serif;
+    font-size: 18px;
+    font-weight: regular;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .container {
     background: yellow;
     padding: 10px;
     margin-bottom: 20px;
-    
-    display: grid;
-    grid-template-columns: 200px 200px 200px; /*pode se usar várias medidas de unidades, como px, em, rem, % , e se pode também misturar essas medidas de unidades como % e px ou rem e %*/
-    grid-template-rows: 300px 200px; /*define a altura das linhas do grid*/
-    
 
-}   
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    /*pode se usar várias medidas de unidades, como px, em, rem, % , e se pode também misturar essas medidas de unidades como % e px ou rem e %*/
+    grid-template-rows: 300px 200px;
+    /*define a altura das linhas do grid*/
+
+
+}
 
 
 .container-02 {
@@ -24,9 +35,11 @@ p {
     height: 500px;
 
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr; /*a medida de unidade fr divide o espaço disponível igualmente entre as colunas*/
-    grid-template-rows: 2fr 1fr; /*a medida fr também funciona nas template-rows*/
-    
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    /*a medida de unidade fr divide o espaço disponível igualmente entre as colunas*/
+    grid-template-rows: 2fr 1fr;
+    /*a medida fr também funciona nas template-rows*/
+
 }
 
 .container-03 {
@@ -36,11 +49,77 @@ p {
     height: 500px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*a medida de unidade fr divide o espaço disponível igualmente entre as colunas*/
-    grid-template-rows: 2fr 1fr; /*a medida fr também funciona nas template-rows*/
+    grid-template-columns: repeat(3, 1fr);
+    /*a função repeat simplifica as medidas repetitivas, exemplo: 1fr 1fr 1fr 1fr 1fr, podemos simplesmente só colocar a função repeat e a quantidade de vezes q se repetirá: repeat(x vezes, x quantidade)
+    e também pode ser usada em conjunto com outras medidas de unidades e com diferentes medidas de unidade, ex: repeat(2, 3fr 200px 150px). também pode repitir mais de uma repetição com vários números*/
+    grid-template-rows: repeat(2, 1fr);
+    /*o mesmo se aplica pra as template-rows*/
+
+}
+
+.container-04 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    /*auto-fill faz com que o grid crie automaticamente quantas colunas couberem no container, mesmo não tendo como ver algumas ele cria colunas invisiveis. o autofill é baseado na medida de unidade que for definida, nesse caso 100px*/
+    grid-template-rows: repeat(2, 1fr);
+    /*o mesmo se aplica pra as template-rows*/
+
+}
+
+.container-05 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    /*o auto-fit aloca automaticamente o espaço disponível para as colunas, fazendo com que elas se ajustem ao tamanho do container*/
+    grid-template-rows: repeat(2, 1fr);
+    /*o mesmo se aplica pra as template-rows*/
+
+}
+
+.container-06 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: min-content min-content;
+    /*min-content faz com que a coluna se ajuste ao tamanho do conteúdo, ou seja, a coluna terá o tamanho do maior conteúdo dentro dela*/
     
 }
 
+.container-06 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    /*max-content faz com que a coluna se ajuste ao tamanho do conteúdo, ou seja, a coluna terá o tamanho do maior conteúdo dentro dela*/
+    
+}
+
+.container-07 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    /*auto faz com que a coluna se ajuste ao tamanho do conteúdo, ou seja, a coluna irá se ajustar ao tamanho do conteúdo dentro dela*/
+
+}
 
 .item {
     border: 1px solid black;
@@ -72,4 +151,12 @@ p {
 
 .item-07 {
     background: tomato;
+}
+
+hr {
+    border: 2px solid rgb(174, 174, 174);
+}
+
+b {
+    color: orange;
 }
