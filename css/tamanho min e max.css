@@ -25,20 +25,15 @@ p {
     background: yellow;
     padding: 10px;
     margin-bottom: 20px;
-    height: 500px;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    /* grid implicitas são as que nós configuramos através das propriedades grid-template-columns e grid-template-rows*/
-/*
-    grid-auto-rows: 200px;
-    /* grid explicitas são as que o navegador cria automaticamente quando adicionamos mais itens do que o definido nas propriedades grid-template-columns e grid-template-rows */
+    grid-template-columns: repeat(3, minmax(100px, 150px));
+    /*pode ser usada também com o repeat*/
 
-    grid-auto-flow: column;
-    grid-auto-columns: 100px;
-    /* grid-auto-flow e grid-auto-columns são propriedades que controlam o comportamento do grid quando novos itens são adicionados */
 
+
+    /*grid-auto-rows: minmax(100px, auto); essa função também pode ser usada em outros grids */
+    
 }
 
 
