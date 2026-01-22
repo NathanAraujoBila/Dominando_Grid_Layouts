@@ -6,7 +6,7 @@
     margin-bottom: 20px;
 
     display: grid;
-
+    /* display grid faz com que o container se comporte como uma grade, ou seja, os elementos dentro dele serão organizados em linhas e colunas*/
 }
 
 .container-2 {
@@ -16,7 +16,7 @@
 
     width: 100px;
     display: inline-grid;
-
+    /*inline-grid faz com que o container se comporte como um elemento inline, ou seja, ele ficará na mesma linha que outros elementos inline ao seu redor*/
 }
 
 .item {
