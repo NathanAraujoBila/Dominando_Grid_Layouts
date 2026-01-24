@@ -1,0 +1,107 @@
+@import url('css/reset.css');
+
+body {
+    margin: 0;
+    background-color: rgba(163, 156, 148, 0.561);
+    display: grid;
+    /*
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+
+    /*
+    * grid-template: ;
+    ***** grid-template-rows: ;
+    ***** grid-template-columns: ;
+    ***** grid-template-areas: ;
+    */
+
+    grid-template:
+        "header header header header" 100px
+        "main main . sidebar" 300px
+        "footer footer footer footer" 100px
+        / 1fr 3fr 1fr 1fr;
+}
+
+
+header {
+    background: orange;
+    grid-area: header;
+}
+
+aside {
+    background: lightcoral;
+    grid-area: sidebar
+}
+
+main {
+    background: deepskyblue;
+    grid-area: main;
+}    
+
+footer {
+    background: yellowgreen;
+    grid-area: footer;
+}
+
+/*
+
+outro código da aula
+
+HTML:
+
+    <header>
+        header
+    </header>
+    <main>
+        main
+    </main>
+    <aside>
+        sidebar
+    </aside>
+    <footer>
+        footer
+    </footer>
+
+____________________________________
+
+
+CSS:
+
+body {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"
+}
+
+.container {
+    border: 2px solid;
+    display: grid;
+}
+
+header {
+    background-color: orange;
+    grid-area: header;
+}
+
+main {
+    background-color: skyblue;
+    grid-area: main;
+}
+
+aside {
+    background-color: lightcoral;
+    grid-area: sidebar;
+}
+
+footer {
+    background-color: yellowgreen;
+    grid-area: footer;
+}
+
+*/
