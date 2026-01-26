@@ -6,8 +6,6 @@ body {
     border: 3px solid;
     grid-template: repeat(3, 200px) / repeat(3, 1fr); 
     
-    /*row-gap: 10px;
-    column-gap: 20px;*/
 
     gap: 15px;
     justify-items: center;  /*há 4 valores de justify-items, center, end, stretch e start*/
