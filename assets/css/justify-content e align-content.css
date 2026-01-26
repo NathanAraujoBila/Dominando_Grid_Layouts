@@ -1,0 +1,54 @@
+@import url('css/reset.css');
+
+body {
+    background-color: rgba(163, 156, 148, 0.561);
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, auto) / repeat(3, auto); 
+    
+    /*row-gap: 10px;
+    column-gap: 20px;*/
+
+    gap: 15px;
+    place-items: center;
+    justify-content: space-evenly; /*o justify e o align-items tem o mesmo valor pros dois: space-envenly, space-between, space-around, center, start, end, strecth*/
+    align-content: space-evenly;
+}
+      
+.item-01 {
+    background: palegoldenrod;
+}
+
+.item-02 {
+    background: paleturquoise;
+
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: palevioletred;
+}
+
+.item-05 {
+    background: lightseagreen;
+}
+
+.item-06 {
+    background: purple;
+}
+
+.item-07 {
+    background: lightgreen;
+}
+
+.item-08 {
+    background: wheat;
+}
+
+.item-09 {
+    background: lightskyblue;
+}
